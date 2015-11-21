@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial, Verdana, sans-serif;
+}
+.container{
+  max-width: $max-width;
+  padding-top: 73px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.max-width-content{
+  max-width: $max-width;
+  margin: 0 auto;
+}
+//  #text-color 
+p{
+  margin:0;
+}
+//all li
+li{
+  list-style: none;
+}
+//  #all-the-a
+a{
+  text-decoration: none;
+  color: $white;
+}
+
