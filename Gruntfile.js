@@ -138,7 +138,7 @@ module.exports = function (grunt) {
         'postcss'
     ]);
 
-    grunt.registerTask('default', [
+    grunt.registerTask('dev', [
         'imagemin',
         'newer:jshint',
         'uglify:dev',

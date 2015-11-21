@@ -4,74 +4,112 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.element-invisible {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px); }
-
-/*
- * Rules for base elements
- */
 html {
-  font-size: 62.5%; }
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: Arial, Verdana, sans-serif; }
+
+.container {
+  max-width: 1200px;
+  padding-top: 73px; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 body {
+  padding: 0;
   margin: 0; }
 
-p, li {
-  font-size: 14px;
-  font-size: 1.4rem;
-  color: #555;
-  line-height: 1.5; }
-
-p, ul, ol, dl {
-  margin: 0 0 0.5em 0; }
-
-ul, ol {
-  padding-left: 2em; }
+.max-width-content {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 p {
-  overflow: hidden; }
+  margin: 0; }
+
+li {
+  list-style: none; }
 
 a {
   text-decoration: none; }
 
-a:hover {
-  text-decoration: underline; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0; }
-
-table {
-  width: 100%;
-  border-collapse: collapse;
+label,
+.webform-container-inline label {
   font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 8px; }
 
-th, td {
-  padding: 0.5em; }
+label.option {
+  display: inline;
+  font-weight: 400;
+  margin-left: 0.5em; }
 
-/*
- * Rules for base drupal elements
- */
-.tabs {
-  padding: 0;
-  overflow: hidden;
-  border-bottom: 1px solid #ccc;
-  margin: 10px 0; }
-  .tabs li {
-    list-style-type: none;
-    float: left; }
-  .tabs a {
-    color: #333;
-    font-size: 14px;
-    font-size: 1.4rem;
-    padding-right: 20px; }
-    .tabs a.active {
-      color: #000;
-      font-weight: 600; }
-    .tabs a:hover {
-      color: #000;
-      text-decoration: none; }
+select {
+  font-size: 12px;
+  font-size: 1.2rem;
+  width: 100%; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  font-size: 12px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  border: solid #e1e1e1 1px;
+  background: #fff;
+  margin-bottom: 5px;
+  padding: 5px; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%; }
+  @media screen and (min-width: 767px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      max-width: 300px; } }
+
+input[type="checkbox"],
+input[type="radio"] {
+  font-size: 16px;
+  font-size: 1.6rem;
+  vertical-align: baseline; }
+
+input[type="submit"] {
+  border: 0;
+  outline: 0;
+  padding: 8px 25px;
+  width: 100%;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out; }
+  @media screen and (min-width: 767px) {
+    input[type="submit"] {
+      width: auto;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 0; } }
+
+.form-type-radio {
+  margin-bottom: 5px; }
+
+.field-widget-text-textarea .form-type-textarea {
+  margin-bottom: 10px; }
+
+.filter-wrapper {
+  border: 0;
+  background: #fff;
+  border-radius: 5px; }
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 2px solid red; }
+
+.webform-component {
+  margin-bottom: 15px; }
 /*# sourceMappingURL=style.css.map */
