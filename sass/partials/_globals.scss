@@ -19,6 +19,12 @@ body {
   max-width: $max-width;
   margin: 0 auto;
 }
+
+.container-grid{
+  @include outer-container;
+  max-width: $max-width;
+}
+
 //  #text-color 
 p{
   margin:0;

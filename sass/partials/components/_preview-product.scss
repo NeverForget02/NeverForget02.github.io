@@ -1,0 +1,32 @@
+/* ==|====================
+   Partials/Components/Preview-product
+
+   -------INDEX--------
+   #Category-Product
+   #Details-product
+   #Review-recent
+   ======================= */
+
+/* #Category-Product
+   ========================================================================== 
+ *Style of the title of category and product
+ */
+
+/* #Details-product
+   ========================================================================== */
+.details-product {
+  @include span-columns(6);
+}
+
+
+/* #Review-recent
+   ========================================================================== */
+.review-recent {
+  @include span-columns(6);
+}
+
+/* #Descrition
+   ========================================================================== */
+.description-product {
+  @include span-columns(6);
+}

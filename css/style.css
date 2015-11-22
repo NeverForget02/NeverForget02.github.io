@@ -24,6 +24,16 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
+.container-grid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; }
+  .container-grid::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 p {
   margin: 0; }
 
@@ -33,83 +43,42 @@ li {
 a {
   text-decoration: none; }
 
-label,
-.webform-container-inline label {
-  font-size: 14px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #333;
+/* ==|====================
+   Partials/Components/Preview-product
+
+   -------INDEX--------
+   #Category-Product
+   ======================= */
+/* #Category-Product
+   ========================================================================== 
+ *Style of the title of category and product
+ */
+/* #details-product
+   ========================================================================== */
+.container-grid {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; }
+  .container-grid::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.details-product {
+  float: left;
   display: block;
-  margin-bottom: 8px; }
+  margin-right: 2.3576515979%;
+  width: 48.821174201%; }
+  .details-product:last-child {
+    margin-right: 0; }
 
-label.option {
-  display: inline;
-  font-weight: 400;
-  margin-left: 0.5em; }
+.review-recent {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%; }
+  .review-recent:last-child {
+    margin-right: 0; }
 
-select {
-  font-size: 12px;
-  font-size: 1.2rem;
-  width: 100%; }
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
-  font-size: 12px;
-  font-size: 1.2rem;
-  border-radius: 3px;
-  border: solid #e1e1e1 1px;
-  background: #fff;
-  margin-bottom: 5px;
-  padding: 5px; }
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%; }
-  @media screen and (min-width: 767px) {
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
-      max-width: 300px; } }
-
-input[type="checkbox"],
-input[type="radio"] {
-  font-size: 16px;
-  font-size: 1.6rem;
-  vertical-align: baseline; }
-
-input[type="submit"] {
-  border: 0;
-  outline: 0;
-  padding: 8px 25px;
-  width: 100%;
-  margin-bottom: 10px;
-  transition: all 0.2s ease-in-out; }
-  @media screen and (min-width: 767px) {
-    input[type="submit"] {
-      width: auto;
-      display: inline-block;
-      margin-right: 10px;
-      margin-bottom: 0; } }
-
-.form-type-radio {
-  margin-bottom: 5px; }
-
-.field-widget-text-textarea .form-type-textarea {
-  margin-bottom: 10px; }
-
-.filter-wrapper {
-  border: 0;
-  background: #fff;
-  border-radius: 5px; }
-
-.form-item input.error,
-.form-item textarea.error,
-.form-item select.error {
-  border: 2px solid red; }
-
-.webform-component {
-  margin-bottom: 15px; }
 /*# sourceMappingURL=style.css.map */
