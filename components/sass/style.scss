@@ -1,0 +1,20 @@
+/*----------Indice-------------
+		#partials
+		#modules
+
+	Importar-las-hojas-scss
+*/
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+//  #partials
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/globals";
+
+//	#modules
+@import "partials/modules/navegation";
+
+
