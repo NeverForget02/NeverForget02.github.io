@@ -243,4 +243,44 @@ li {
 a {
   text-decoration: none; }
 
+/* ==|====================
+   Partials/Componentes/Navigation
+
+   -------INDEX--------
+   #Container of navigation
+   #Navigation
+   ======================= */
+/* #Container of navigation
+   ========================================================================== */
+/* #Navigation
+   ========================================================================== */
+.main-nav {
+  margin-top: 20px; }
+  .main-nav a {
+    font-size: 18px;
+    font-size: 1.8rem;
+    margin-right: 20px;
+    color: #000; }
+
+/* ==|====================
+   Partials/Modules/Navigation
+
+   -------INDEX--------
+   #header
+   #Logo
+   ======================= */
+/* #Header
+   ========================================================================== */
+.header {
+  text-align: center;
+  width: 100%; }
+
+/* #Logo
+   ========================================================================== */
+.content-logo {
+  margin-top: 25px; }
+
+.content-logo-img {
+  width: 30%; }
+
 /*# sourceMappingURL=style.min.css.map */

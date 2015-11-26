@@ -1,0 +1,22 @@
+/* ==|====================
+   Partials/Componentes/Navigation
+
+   -------INDEX--------
+   #Container of navigation
+   #Navigation
+   ======================= */
+
+/* #Container of navigation
+   ========================================================================== */
+
+
+/* #Navigation
+   ========================================================================== */
+.main-nav{
+	margin-top: 20px;
+	a{
+		@include font-size(18);
+		margin-right: 20px;
+		color: $black;
+	}
+}
