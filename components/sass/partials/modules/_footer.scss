@@ -1,0 +1,54 @@
+/* ==|====================
+   Partials/Componentes/Footer
+
+   -------INDEX--------
+   #Container of Footer
+   #Logo Footer
+   #Socials Networks
+   ======================= */
+
+/* #Container of Footer
+   ========================================================================== */
+.footer{
+	background-color: $black;
+	width: 100%;
+	padding: 23px 0;
+	margin-top: 70px;
+	
+}
+
+.content-footer{
+	@include outer-container;
+}
+/* #Logo Footer
+   ========================================================================== */
+.content-logo-footer{
+	@include span-columns(6);
+	margin-top: 10px;
+
+	p{
+		color: $white;
+	}
+}
+
+.logo-footer{
+	font-family: $logo;
+}
+
+/* #Socials Networks
+   ========================================================================== */
+.content-rss{
+	@include span-columns(6);
+	text-align: right;
+	
+	a{
+		margin-right: 15px;
+    &:last-child{
+    	margin-right: 0;
+    }
+	}
+
+	img{
+		width: 7%;
+	}
+}

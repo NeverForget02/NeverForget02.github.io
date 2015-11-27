@@ -4,6 +4,9 @@
 
 	Importar-las-hojas-scss
 */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Griffy);
 html {
   box-sizing: border-box; }
 
@@ -235,13 +238,22 @@ body {
     display: table; }
 
 p {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
   margin: 0; }
 
 li {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "Raleway", sans-serif; }
+
+h2 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  font-family: "Raleway", sans-serif; }
 
 /* ==|====================
    Partials/Componentes/Navigation
@@ -260,7 +272,7 @@ a {
     font-size: 18px;
     font-size: 1.8rem;
     margin-right: 20px;
-    color: #000; }
+    color: #141414; }
 
 /* ==|====================
    Partials/Modules/Navigation
@@ -281,6 +293,122 @@ a {
   margin-top: 25px; }
 
 .content-logo-img {
-  width: 30%; }
+  width: 20%; }
+
+/* ==|====================
+   Partials/Componentes/Footer
+
+   -------INDEX--------
+   #Container of Footer
+   #Logo Footer
+   #Socials Networks
+   ======================= */
+/* #Container of Footer
+   ========================================================================== */
+.footer {
+  background-color: #141414;
+  width: 100%;
+  padding: 23px 0;
+  margin-top: 70px; }
+
+.content-footer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .content-footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* #Logo Footer
+   ========================================================================== */
+.content-logo-footer {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  margin-top: 10px; }
+  .content-logo-footer:last-child {
+    margin-right: 0; }
+  .content-logo-footer p {
+    color: #fff; }
+
+.logo-footer {
+  font-family: "Griffy", cursive; }
+
+/* #Socials Networks
+   ========================================================================== */
+.content-rss {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  text-align: right; }
+  .content-rss:last-child {
+    margin-right: 0; }
+  .content-rss a {
+    margin-right: 15px; }
+    .content-rss a:last-child {
+      margin-right: 0; }
+  .content-rss img {
+    width: 7%; }
+
+/* ==|====================
+   Partials/Componentes/categories
+
+   -------INDEX--------
+   #Container of categories
+   #Title
+   #Content text
+   ======================= */
+/* #Container of categories
+   ========================================================================== */
+.categories {
+  margin-top: 70px; }
+
+.content-category {
+  width: 23%;
+  display: inline-block;
+  height: 328px;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 4px #000; }
+  .content-category img {
+    width: 100%;
+    height: 287px; }
+  .content-category:nth-child(4n+1) {
+    margin-right: 0; }
+
+/* #Title
+   ========================================================================== */
+.category-title {
+  color: #DA5029; }
+
+/* #Content text and triangle
+   ========================================================================== */
+.content-category-text {
+  position: relative;
+  background-color: #48AAA7;
+  top: -3px;
+  width: 100%;
+  padding: 10px; }
+  .content-category-text p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-left: 20px;
+    color: #fff; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 21.5px 26px 21.5px;
+  border-color: transparent transparent #48AAA7 transparent;
+  position: absolute;
+  top: -20px;
+  left: 20px; }
 
 /*# sourceMappingURL=style.min.css.map */

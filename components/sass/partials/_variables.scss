@@ -6,13 +6,19 @@
 $sprite-image: "../images/global-sprite";
 
 // Typography
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Griffy);
 
+$title: 'Raleway', sans-serif;
+$body: 'Lato', sans-serif;
+$logo: 'Griffy', cursive;
 
 // Colors
 $turquoise:#48AAA7;
 $white:#fff;
 $grey:#74686B;
-$black:#000;
+$black:#141414;
 $red:#DA5029;
 
 // Neat variables

@@ -27,6 +27,8 @@ body {
 
 //  #text-color
 p{
+  font-family: $body;
+  @include font-size(14);
   margin:0;
 }
 //all li
@@ -36,5 +38,10 @@ li{
 //  #all-the-a
 a{
   text-decoration: none;
+  font-family: $title;
 }
 
+h2{
+  @include font-size(36);
+  font-family: $title;
+}
