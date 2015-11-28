@@ -42,6 +42,8 @@ a{
 }
 
 h2{
-  @include font-size(36);
+  @include font-size(30);
   font-family: $title;
+  text-align: center;
+  text-transform: uppercase;
 }
