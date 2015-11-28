@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         browserSync: {
             dev: {
-                bsFiles: { src : ['css/*.css', '*.html', 'js/script.js'] },
+                bsFiles: { src : ['css/*.css', '*.html', 'js/script-min.js'] },
                 options: {
                     server: {
                         baseDir: './'
@@ -31,16 +31,16 @@ module.exports = function(grunt) {
             }
         }, /* uglify */
 
-        // imagemin: {
-        //     dynamic: {
-        //         files: [{
-        //             expand: true,
-        //             cwd: 'components/img/',
-        //             src: ['**/*.{png,jpg,gif}'],
-        //             dest: 'img/'
-        //         }]
-        //     }
-        // }, /* imagemin */
+        imagemin: {
+            dynamic: {
+                files: [{
+                    expand: true,
+                    cwd: 'components/img/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'img/'
+                }]
+            }
+        }, /* imagemin */
 
 
         /*======== watch ========*/
@@ -72,5 +72,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-browser-sync');
 
-    grunt.registerTask('dev', ['sass', 'uglify', 'browserSync', 'watch']);
+    grunt.registerTask('dev', ['sass', 'uglify','imagemin', 'browserSync', 'watch']);
 }
