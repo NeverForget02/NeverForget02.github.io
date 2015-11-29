@@ -254,8 +254,24 @@ h2 {
   font-size: 30px;
   font-size: 3rem;
   font-family: "Raleway", sans-serif;
-  text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0; }
+
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: "Raleway", sans-serif; }
+
+.content-title {
+  text-align: center; }
+  .content-title span {
+    font-size: 17px;
+    font-size: 1.7rem;
+    color: #74686B;
+    font-family: "Lato", sans-serif; }
+  .content-title p {
+    margin: 10px 0; }
 
 /* ==|====================
    Partials/Componentes/Navigation
@@ -300,6 +316,141 @@ h2 {
   margin: 10px 0 10px 33px; }
 
 /* ==|====================
+   Partials/Componentes/categories
+
+   -------INDEX--------
+   #Container of categories
+   #Title
+   #Content text
+   ======================= */
+/* #Container of categories
+   ========================================================================== */
+.categories {
+  margin-top: 70px; }
+
+.content-category {
+  width: 21%;
+  display: inline-block;
+  height: 307px;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 61px;
+  margin-top: 20px;
+  box-shadow: 0 0 4px #000; }
+  .content-category img {
+    width: 100%;
+    height: 266px; }
+  .content-category:nth-child(4n+1) {
+    margin-right: 0; }
+
+/* #Title
+   ========================================================================== */
+.category-title {
+  color: #DA5029; }
+
+/* #Content text and triangle
+   ========================================================================== */
+.content-category-text {
+  position: relative;
+  background-color: #48AAA7;
+  top: -3px;
+  width: 100%;
+  padding: 10px; }
+  .content-category-text p {
+    font-size: 18px;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-left: 20px;
+    color: #fff; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 21.5px 26px 21.5px;
+  border-color: transparent transparent #48AAA7 transparent;
+  position: absolute;
+  top: -20px;
+  left: 20px; }
+
+/* ==|====================
+   Partials/Modules/Related-home
+
+   -------INDEX--------
+   #container of related
+   #content related
+   ======================= */
+/* #container of related
+   ========================================================================== */
+.related {
+  margin-top: 70px;
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 70px 0; }
+
+.related-title {
+  color: #48AAA7; }
+
+/* #content related
+   ========================================================================== */
+.container-related-products {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px; }
+
+.content-related {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-right: 70px;
+  background-color: #DA5029;
+  box-shadow: 0 0 4px #000; }
+  .content-related::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .content-related:nth-child(2n+2) {
+    margin-right: 0; }
+  .content-related img {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    width: 47%;
+    height: 230px; }
+    .content-related img:last-child {
+      margin-right: 0; }
+
+.content-related-info {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  position: relative; }
+  .content-related-info:last-child {
+    margin-right: 0; }
+  .content-related-info h3 {
+    color: #fff; }
+  .content-related-info span {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+    color: #fff; }
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 19.5px 22px 19.5px 0;
+  border-color: transparent #DA5029 transparent transparent;
+  position: absolute;
+  left: -22px; }
+
+/* ==|====================
    Partials/Componentes/Footer
 
    -------INDEX--------
@@ -312,8 +463,7 @@ h2 {
 .footer {
   background-color: #141414;
   width: 100%;
-  padding: 23px 0;
-  margin-top: 70px; }
+  padding: 23px 0; }
 
 .content-footer {
   max-width: 1200px;
@@ -356,63 +506,5 @@ h2 {
       margin-right: 0; }
   .content-rss img {
     width: 7%; }
-
-/* ==|====================
-   Partials/Componentes/categories
-
-   -------INDEX--------
-   #Container of categories
-   #Title
-   #Content text
-   ======================= */
-/* #Container of categories
-   ========================================================================== */
-.categories {
-  margin-top: 70px; }
-
-.content-category {
-  width: 23%;
-  display: inline-block;
-  height: 328px;
-  vertical-align: top;
-  text-align: center;
-  margin-right: 20px;
-  margin-top: 20px;
-  box-shadow: 0 0 4px #000; }
-  .content-category img {
-    width: 100%;
-    height: 287px; }
-  .content-category:nth-child(4n+1) {
-    margin-right: 0; }
-
-/* #Title
-   ========================================================================== */
-.category-title {
-  color: #DA5029; }
-
-/* #Content text and triangle
-   ========================================================================== */
-.content-category-text {
-  position: relative;
-  background-color: #48AAA7;
-  top: -3px;
-  width: 100%;
-  padding: 10px; }
-  .content-category-text p {
-    font-size: 18px;
-    font-size: 1.8rem;
-    text-align: left;
-    margin-left: 20px;
-    color: #fff; }
-
-.triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 21.5px 26px 21.5px;
-  border-color: transparent transparent #48AAA7 transparent;
-  position: absolute;
-  top: -20px;
-  left: 20px; }
 
 /*# sourceMappingURL=style.min.css.map */

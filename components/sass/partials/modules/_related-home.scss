@@ -1,0 +1,71 @@
+/* ==|====================
+   Partials/Modules/Related-home
+
+   -------INDEX--------
+   #container of related
+   #content related
+   ======================= */
+
+/* #container of related
+   ========================================================================== */
+.related{
+	margin-top: 70px; 
+	background-color: #f4f4f4;
+	width: 100%;
+	padding: 70px 0;
+}
+
+.related-title{
+	color: $turquoise;
+}
+
+/* #content related
+   ========================================================================== */
+.container-related-products{
+	width: 100%;
+	text-align: center;
+	margin-top: 60px;
+}
+.content-related{
+	@include outer-container;
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-right: 70px;
+	background-color: $red;
+	box-shadow: 0 0 4px #000;
+	
+	&:nth-child(2n+2){
+		margin-right: 0;
+	}
+	img{
+		@include span-columns(6);
+		width: 47%;
+		height: 230px;
+	}
+}
+.content-related-info{
+	@include span-columns(6);
+	position: relative;
+	
+	h3{
+		color: $white;
+	}
+
+	span{
+		@include font-size(16);
+		font-family: $body;
+		color: $white;
+	}
+}
+
+.triangle-left{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 19.5px 22px 19.5px 0;
+	border-color: transparent $red transparent transparent;
+	position: absolute;
+	left: -22px;
+}
