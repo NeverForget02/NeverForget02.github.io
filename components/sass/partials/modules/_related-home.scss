@@ -1,12 +1,13 @@
 /* ==|====================
-   Partials/Modules/Related-home
+   Partials/Modules/product-home
 
    -------INDEX--------
-   #container of related
-   #content related
+   #Related
+   #content related product
+   #content product info
    ======================= */
 
-/* #container of related
+/* #related
    ========================================================================== */
 .related{
 	margin-top: 70px; 
@@ -15,17 +16,17 @@
 	padding: 70px 0;
 }
 
-.related-title{
+.product-title{
 	color: $turquoise;
 }
 
-/* #content related
+/* #content related product
    ========================================================================== */
 .container-related-products{
 	width: 100%;
 	text-align: center;
 }
-.content-related{
+.content-related-product{
 	@include outer-container;
 	display: inline-block;
 	width: 30%;
@@ -44,9 +45,15 @@
 		height: 230px;
 	}
 }
-.content-related-info{
+
+/* #content product info
+   ========================================================================== 
+   *these styles aplly in list.html
+   */
+.content-product-info{
 	@include span-columns(6);
 	position: relative;
+	text-align: center;
 	
 	h3{
 		color: $white;
