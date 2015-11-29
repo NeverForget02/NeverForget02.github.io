@@ -12,7 +12,6 @@ function pauseSlider() {
   clearInterval(interval);
 }
 
-
 function createControls(){
 	var li_controls="",
 			controlsContent= $("#slider-controls");
@@ -73,6 +72,7 @@ function prevImage(){
 }
 createControls(); 
 startSlider();
+
 $( "#slider" )
   .on( "mouseenter", function() {
     pauseSlider();

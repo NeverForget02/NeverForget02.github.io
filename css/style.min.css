@@ -321,7 +321,7 @@ ul {
 
 .slider {
   width: 100%;
-  height: 400px;
+  height: 600px;
   overflow: hidden;
   position: relative; }
 
@@ -332,12 +332,12 @@ ul {
   display: none;
   list-style-type: none;
   width: 100%;
-  height: 500px; }
+  height: 600px; }
 
 .active {
   display: block !important;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 21s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
@@ -357,7 +357,7 @@ ul {
 .slider-controls li {
   cursor: pointer;
   display: inline-block;
-  background: #fff;
+  background: #74686B;
   text-indent: -99999px;
   height: 12px;
   width: 12px;
@@ -367,33 +367,35 @@ ul {
   border-radius: 50%; }
 
 .active-control {
-  background: #00c5b9 !important; }
+  background: #141414 !important; }
 
 .btn-control {
   display: block;
   position: absolute;
   top: 40%;
   border: 1px solid #fff;
-  background: #00c5b9;
+  background: #141414;
   color: #fff;
   padding: 20px 15px;
   font-size: 40px;
-  font-weight: lighter; }
+  font-weight: lighter;
+  font-family: "Lato", sans-serif; }
   @media (min-width: 960px) {
     .btn-control {
       display: none; } }
 
 .btn-next {
-  right: 0; }
+  right: 1px; }
 
 .btn-prev {
-  left: 0; }
+  left: 1px; }
 
 @media (min-width: 960px) {
   .btn-control:hover {
     background: #fff;
-    color: #00c5b9; }
-  #slider:hover .btn-control {
+    color: #141414;
+    border: 1px solid #141414; }
+  .slider:hover .btn-control {
     display: block; } }
 
 @-webkit-keyframes fadeIn {
