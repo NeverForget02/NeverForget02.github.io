@@ -1,0 +1,107 @@
+ul{
+    margin: 0;
+    padding:0;
+}
+#slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+#slider .slide {
+    display: none;
+    list-style-type: none;
+    width:100%;
+    height: 500px;
+
+}
+.active{
+    display: block !important;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.slide img{
+    width: inherit;
+    height: inherit
+}
+.slider-controls {
+    margin-top: 15px;
+    text-align: center;
+    position:absolute;
+    bottom: 20px;
+    left: 48%;
+}
+
+.slider-controls li {
+    cursor: pointer;
+    display: inline-block;
+    background: #fff;
+    text-indent: -99999px;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.active-control {
+    background: #00c5b9 !important;
+}
+.btn-control{
+    display: block;
+    position:absolute;
+    top:40%;
+    border: 1px solid #fff;
+    background: #00c5b9;
+    color: #fff;
+    padding: 20px 15px;
+    font-size: 40px;
+    font-weight: lighter;
+
+    @media (min-width:960px){
+        display: none;
+    }
+}
+.btn-next{
+    right: 0;
+}
+.btn-prev{
+    left:0;
+}
+@media (min-width:960px){
+    .btn-control:hover{
+        background:#fff;
+        color: #00c5b9;
+    }
+    #slider:hover .btn-control{
+        display: block;
+    }
+}
+
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
