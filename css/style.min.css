@@ -285,7 +285,6 @@ h3 {
 /* #Navigation
    ========================================================================== */
 .main-nav {
-  margin-top: 10px;
   padding: 20px 0;
   border-top: 1px solid #cecece;
   border-bottom: 1px solid #cecece; }
@@ -385,7 +384,8 @@ ul {
   width: 100%;
   height: 600px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  margin-top: 70px; }
 
 .slides {
   position: relative; }
