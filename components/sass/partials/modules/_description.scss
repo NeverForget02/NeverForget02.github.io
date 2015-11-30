@@ -1,0 +1,17 @@
+/* ==|====================
+   Partials/Modules/description
+
+   -------INDEX--------
+   #Container of description
+   ======================= */
+
+/* #Container of description
+   ========================================================================== */
+.description{
+	@include outer-container;
+	padding: 70px 0;
+
+	p{
+		margin-bottom: 10px;
+	}
+}

@@ -47,6 +47,12 @@
 	}
 
 	img{
-		width: 7%;
+		width: 27%;
+		@media(min-width: 1025px){
+			width: 13%;
+		}
+		@media(min-width: 1025px){
+			width: 7%;
+		}
 	}
 }

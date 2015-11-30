@@ -16,13 +16,12 @@ body {
   margin: 0;
 }
 .max-width-content{
-  max-width: $max-width;
+  max-width: $tablet;
   margin: 0 auto;
-}
 
-.container-grid{
-  @include outer-container;
-  max-width: $max-width;
+  @media (min-width: 1025px){
+    max-width: $max-width;
+  }
 }
 
 //  #text-color
@@ -50,9 +49,16 @@ h2{
 }
 
 h3{
-  @include font-size(18);
+  @include font-size(25);
   font-family: $title;
 }
+
+h4{
+  @include font-size(18);
+  font-family: $title;
+  color: $white;
+}
+
 .content-title{
   text-align: center;
 

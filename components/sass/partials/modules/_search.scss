@@ -1,12 +1,15 @@
 .search-container {
+  display: inline-block;
   overflow: hidden;
-  position:relative;
+  position:absolute;
   height: 40px;
   width: 40px;
   border-radius: 100%;
   box-shadow: 0 0 5px #141414;
   -moz-transition: all 0.35s;
   -webkit-transition: all 0.35s;
+  top: 8px;
+  margin-left: 20px;
 }
 .search-container:hover {
   width: 250px;

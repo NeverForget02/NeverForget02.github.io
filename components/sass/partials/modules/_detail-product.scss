@@ -1,0 +1,49 @@
+/* ==|====================
+   Partials/Modules/product-home
+
+   -------INDEX--------
+   #Container of details
+   #container stars
+   #Button
+   ======================= */
+
+/* #Container of details
+   ========================================================================== */
+.details {
+	@include outer-container;
+}
+.slider-preview{
+	@include span-columns(6);
+}
+
+.details-cost{
+	@include span-columns(6);
+}
+.details-title{
+	color: $red;
+}
+.cost{
+	@include font-size(18);
+	margin: 12px 0;
+}
+/* #Container stars
+   ========================================================================== */
+.container-stars{
+	width: 40%;
+	margin: 12px 0;
+
+	img{
+		width: 10%;
+	}
+}
+/* #Button
+   ========================================================================== */
+.btn{
+	@include font-size(14);
+	font-family: $title;
+	padding: 12px 30px;
+	background-color: $turquoise;
+	color: $white;
+	border:0;
+	margin: 12px 0;
+}

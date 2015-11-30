@@ -16,19 +16,36 @@
 .content-product{
 	@include outer-container;
 	display: inline-block;
-	width: 30%;
+	width: 80%;
 	vertical-align: top;
 	margin-top: 20px;
-	margin-right: 57px;
+	margin-right: 0;
 	background-color: $red;
 	box-shadow: 0 0 4px #000;
 	
-	&:nth-child(3n+3){
-		margin-right: 0;
-	}
 	img{
 		@include span-columns(6);
 		width: 47%;
 		height: 230px;
+	}
+	@media(min-width: 560px){
+		width: 45%;
+		margin-right: 50px;
+		&:nth-child(2n+2){
+			margin-right: 0;
+		}
+	}
+	@media(min-width: 700px){
+		width: 30%;
+		margin-right: 42px;
+		&:nth-child(2n+2){
+			margin-right: 42px;
+		}
+		&:nth-child(3n+3){
+			margin-right: 0;
+		}
+	}
+	@media (min-width: 1025px){
+		margin-right: 42px;
 	}
 }
