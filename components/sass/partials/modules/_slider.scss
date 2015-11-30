@@ -1,0 +1,113 @@
+ul{
+    margin: 0;
+    padding:0;
+}
+.slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.slides{
+    position:relative;
+}
+.slides .slide {
+    display: none;
+    list-style-type: none;
+    width:100%;
+    height: 600px;
+
+}
+.active{
+    display: block !important;
+
+    -webkit-animation-duration:21s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.slide img{
+    width: inherit;
+    height: inherit
+}
+.slider-controls {
+    margin-top: 15px;
+    text-align: center;
+    position:absolute;
+    bottom: 20px;
+    left: 48%;
+}
+
+.slider-controls li {
+    cursor: pointer;
+    display: inline-block;
+    background: $grey;
+    text-indent: -99999px;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.active-control {
+    background: $black !important;
+}
+.btn-control{
+    display: block;
+    position:absolute;
+    top:40%;
+    border: 1px solid $white;
+    background: $black;
+    color: $white;
+    padding: 20px 15px;
+    font-size: 40px;
+    font-weight: lighter;
+    font-family:$body; 
+
+    @media (min-width:960px){
+        display: none;
+    }
+}
+.btn-next{
+    right: 1px;
+}
+.btn-prev{
+    left:1px;
+}
+@media (min-width:960px){
+    .btn-control:hover{
+        background:$white;
+        color: $black;
+        border: 1px solid $black;
+
+    }
+    .slider:hover .btn-control{
+        display: block;
+    }
+}
+
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

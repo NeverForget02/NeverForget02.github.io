@@ -315,6 +315,163 @@ h3 {
   width: 35%;
   margin: 10px 0 10px 33px; }
 
+.search-container {
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  box-shadow: 0 0 5px #141414;
+  -moz-transition: all 0.35s;
+  -webkit-transition: all 0.35s; }
+
+.search-container:hover {
+  width: 250px;
+  border-radius: 5px 20px 20px 5px; }
+
+.search-container:hover input {
+  display: inline-block;
+  width: 200px;
+  padding: 5px; }
+
+input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  float: right;
+  width: 0px;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  background: #fff;
+  color: #6A5D4F;
+  font-size: 15px;
+  padding: 0px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  -moz-transition: all 0.25s;
+  -webkit-transition: all 0.25s; }
+
+input:focus {
+  outline: none;
+  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15); }
+
+.button {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px !important;
+  margin: 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -2px 1px rgba(0, 0, 0, 0.3); }
+
+.button img {
+  margin-top: 6px; }
+
+.button:active {
+  border: 0 !important;
+  text-shadow: 0 0 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.slider {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative; }
+
+.slides {
+  position: relative; }
+
+.slides .slide {
+  display: none;
+  list-style-type: none;
+  width: 100%;
+  height: 600px; }
+
+.active {
+  display: block !important;
+  -webkit-animation-duration: 21s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+.slide img {
+  width: inherit;
+  height: inherit; }
+
+.slider-controls {
+  margin-top: 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 48%; }
+
+.slider-controls li {
+  cursor: pointer;
+  display: inline-block;
+  background: #74686B;
+  text-indent: -99999px;
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.active-control {
+  background: #141414 !important; }
+
+.btn-control {
+  display: block;
+  position: absolute;
+  top: 40%;
+  border: 1px solid #fff;
+  background: #141414;
+  color: #fff;
+  padding: 20px 15px;
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: "Lato", sans-serif; }
+  @media (min-width: 960px) {
+    .btn-control {
+      display: none; } }
+
+.btn-next {
+  right: 1px; }
+
+.btn-prev {
+  left: 1px; }
+
+@media (min-width: 960px) {
+  .btn-control:hover {
+    background: #fff;
+    color: #141414;
+    border: 1px solid #141414; }
+  .slider:hover .btn-control {
+    display: block; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /* ==|====================
    Partials/Componentes/categories
 

@@ -22,16 +22,31 @@
 					<a href="#">Como comprar?</a>
 					<a href="#">Contacto</a>
 					<a href="#">Iniciar Sesión</a>
-					<input type="search" value="" placeholder="Buscar">
+					<div class='search-container'>
+		        <input placeholder='Search' type='text'>
+		        <a class='button'>
+		          <img src="img/search-icon.png">
+		        </a>
+      		</div><!-- search-container -->
 				</nav><!-- main-nav -->
 			</div><!-- max-width-content -->
 		</header><!-- header -->
 		
-		<section class="slider">
-			<div class="max-width-content">
-				
-			</div><!-- max-width-content -->
-		</section> <!-- slider -->
+		<div class="max-width-content">
+			<section class="slider" id="slider">
+        <ul class="slides">
+            <li class="active slide slide0 "><img src="img/banners/banners1.jpg"></li>
+            <li class="slide slide1"><img src="img/banners/banners2.jpg"></li>
+            <li class="slide slide2 "><img src="img/banners/banners3.jpg"></li>
+            <li class="slide slide3"><img src="img/banners/banners4.jpg"></li>
+            <li class="slide slide4 "><img src="img/banners/banners5.jpg"></li>
+            <li class="slide slide5"><img src="img/banners/banners6.jpg"></li>
+        </ul>
+       	<ul id="slider-controls" class="slider-controls"></ul>
+        <button id="prev" class="btn-control btn-prev"><</button>
+       	<button id="next" class="btn-control btn-next">></button>
+    	</section><!-- slider -->
+		</div><!-- max-width-content -->
 
 		<section id="category" class="categories">
 			<div class="max-width-content">
