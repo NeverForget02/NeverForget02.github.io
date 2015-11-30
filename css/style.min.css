@@ -374,13 +374,14 @@ h3 {
   left: 20px; }
 
 /* ==|====================
-   Partials/Modules/Related-home
+   Partials/Modules/product-home
 
    -------INDEX--------
-   #container of related
-   #content related
+   #Related
+   #content related product
+   #content product info
    ======================= */
-/* #container of related
+/* #related
    ========================================================================== */
 .related {
   margin-top: 70px;
@@ -388,16 +389,16 @@ h3 {
   width: 100%;
   padding: 70px 0; }
 
-.related-title {
+.product-title {
   color: #48AAA7; }
 
-/* #content related
+/* #content related product
    ========================================================================== */
 .container-related-products {
   width: 100%;
   text-align: center; }
 
-.content-related {
+.content-related-product {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -408,33 +409,38 @@ h3 {
   margin-right: 70px;
   background-color: #DA5029;
   box-shadow: 0 0 4px #000; }
-  .content-related::after {
+  .content-related-product::after {
     clear: both;
     content: "";
     display: table; }
-  .content-related:nth-child(2n+2) {
+  .content-related-product:nth-child(2n+2) {
     margin-right: 0; }
-  .content-related img {
+  .content-related-product img {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 48.821174201%;
     width: 47%;
     height: 230px; }
-    .content-related img:last-child {
+    .content-related-product img:last-child {
       margin-right: 0; }
 
-.content-related-info {
+/* #content product info
+   ========================================================================== 
+   *these styles aplly in list.html
+   */
+.content-product-info {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
   width: 48.821174201%;
-  position: relative; }
-  .content-related-info:last-child {
+  position: relative;
+  text-align: center; }
+  .content-product-info:last-child {
     margin-right: 0; }
-  .content-related-info h3 {
+  .content-product-info h3 {
     color: #fff; }
-  .content-related-info span {
+  .content-product-info span {
     font-size: 16px;
     font-size: 1.6rem;
     font-family: "Lato", sans-serif;
@@ -448,6 +454,47 @@ h3 {
   border-color: transparent #DA5029 transparent transparent;
   position: absolute;
   left: -22px; }
+
+/* ==|====================
+   Partials/Modules/product-home
+
+   -------INDEX--------
+   #Related
+   #content related product
+   #content product info
+   ======================= */
+/* #related
+   ========================================================================== */
+.products {
+  margin: 70px 0;
+  width: 100%; }
+
+.content-product {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin-top: 20px;
+  margin-right: 57px;
+  background-color: #DA5029;
+  box-shadow: 0 0 4px #000; }
+  .content-product::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .content-product:nth-child(3n+3) {
+    margin-right: 0; }
+  .content-product img {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 48.821174201%;
+    width: 47%;
+    height: 230px; }
+    .content-product img:last-child {
+      margin-right: 0; }
 
 /* ==|====================
    Partials/Componentes/Footer

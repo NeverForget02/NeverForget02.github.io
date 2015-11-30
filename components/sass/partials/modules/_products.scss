@@ -1,0 +1,34 @@
+/* ==|====================
+   Partials/Modules/product-home
+
+   -------INDEX--------
+   #Related
+   #content related product
+   #content product info
+   ======================= */
+
+/* #related
+   ========================================================================== */
+.products{
+	margin: 70px 0; 
+	width: 100%;
+}  
+.content-product{
+	@include outer-container;
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-right: 57px;
+	background-color: $red;
+	box-shadow: 0 0 4px #000;
+	
+	&:nth-child(3n+3){
+		margin-right: 0;
+	}
+	img{
+		@include span-columns(6);
+		width: 47%;
+		height: 230px;
+	}
+}
