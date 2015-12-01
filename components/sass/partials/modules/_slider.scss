@@ -9,6 +9,9 @@ ul{
     position: relative;
     margin-top: 70px;
     @media( min-width: 560px){
+        height: 300px;
+    }
+    @media( min-width: 1000px){
         height: 600px;
     }
 }
@@ -19,8 +22,10 @@ ul{
     display: none;
     list-style-type: none;
     width:100%;
-    height: 600px;
-
+    height: 300px;
+  @media( min-width: 1000px){
+        height: 600px;
+    }
 }
 .active{
     display: block !important;
@@ -36,9 +41,10 @@ ul{
 .slide img{
     width: 100%;
     height: 300px;
-    @media( min-width: 560px){
-        height: inherit;
-        width: inherit;
+
+    @media (min-width: 1000px){
+      height: inherit;
+      width: inherit;
     }
 }
 .slider-controls {
@@ -49,8 +55,8 @@ ul{
   left: 20%;
   top: 80%;
   @media(min-width: 560px){
-    top: 96%;
-    left: 43%;
+    top: 89%;
+    left: 38%;
   }
   @media(min-width: 1025px){
     left: 44%;

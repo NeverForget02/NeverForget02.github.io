@@ -25,7 +25,7 @@
 .container-products{
 	width: 100%;
 	text-align: center;
-	@media(min-width: 560px) {
+	@media(min-width: 1200px) {
 		text-align: left;
 	}
 }
@@ -43,6 +43,12 @@
 		@include font-size(16);
 		font-family: $body;
 		color: $white;
+		@media(min-width: 560px){
+			@include font-size(23);
+		}
+		@media (min-width: 1200px){
+			@include font-size(16);
+		}
 	}
 }
 

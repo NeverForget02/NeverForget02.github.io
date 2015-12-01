@@ -48,11 +48,11 @@
 
 	img{
 		width: 27%;
-		@media(min-width: 1025px){
-			width: 13%;
+		@media(min-width: 560px){
+			width: 11%;
 		}
-		@media(min-width: 1025px){
-			width: 7%;
+		@media(min-width: 1000px){
+			width: 8%;
 		}
 	}
 }
