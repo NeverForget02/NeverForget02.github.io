@@ -545,7 +545,7 @@ ul {
   text-align: center; }
   @media (min-width: 560px) {
     .categories {
-      text-align: none; } }
+      text-align: left; } }
 
 .content-category {
   width: 70%;
@@ -573,11 +573,12 @@ ul {
   @media (min-width: 1210px) {
     .content-category {
       width: 21%;
-      margin-right: 61px; }
+      margin-right: 0;
+      margin-right: 30px; }
       .content-category:nth-child(3n+1) {
-        margin-right: 61px; }
+        margin-right: 30px; }
       .content-category:nth-child(2n+1) {
-        margin-right: 61px; }
+        margin-right: 30px; }
       .content-category:nth-child(4n+1) {
         margin-right: 0; } }
 
@@ -740,6 +741,9 @@ ul {
         margin-right: 42px; }
       .content-product:nth-child(3n+3) {
         margin-right: 0; } }
+  @media (min-width: 1025px) {
+    .content-product {
+      margin-right: 42px; } }
 
 .btn-product {
   background-color: #DA5029;
