@@ -18,8 +18,22 @@ body {
 .max-width-content{
   max-width: $tablet;
   margin: 0 auto;
-
-  @media (min-width: 1025px){
+  @media(min-width: 319px){
+    max-width: 340px;
+  }
+  @media(min-width: 420px){
+    max-width: 500px;
+  }
+  @media(min-width: 560px){
+    max-width: 527px;
+  }
+  @media (min-width: 680px){
+    max-width: $movil;
+  }
+  @media (min-width: 780px){
+    max-width: $tablet;
+  }
+  @media (min-width: 1000px){
     max-width: $max-width;
   }
 }
@@ -54,9 +68,15 @@ h3{
 }
 
 h4{
-  @include font-size(18);
+  @include font-size(16);
   font-family: $title;
   color: $white;
+  @media( min-width: 560px){
+    @include font-size(23);
+  }
+  @media( min-width: 1200px){
+    @include font-size(18);
+  }
 }
 
 .content-title{
