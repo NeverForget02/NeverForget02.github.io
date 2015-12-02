@@ -848,7 +848,8 @@ ul {
   display: none;
   width: 100%; }
   .slide-image img {
-    width: inherit; }
+    width: inherit;
+    height: 396px; }
 
 .main-img {
   display: block;
