@@ -13,12 +13,19 @@
 	@include outer-container;
 }
 .slider-preview{
-	@include span-columns(6);
-  width: 40.821174%;
+  width: 100%;
+  @media(min-width: 850px){
+    @include span-columns(6);
+    width: 40.821174%;
+  }
+	
 }
 
 .details-cost{
-	@include span-columns(6);
+	width:100%;
+  @media(min-width: 850px){
+    @include span-columns(6);
+  }
 }
 .details-title{
 	color: $red;
@@ -30,8 +37,11 @@
 /* #Container stars
    ========================================================================== */
 .container-stars{
-	width: 40%;
+	width: 80%;
 	margin: 12px 0;
+  @media(min-width: 560px){
+    width: 40%;
+  }
 
 	img{
 		width: 10%;
@@ -72,19 +82,24 @@
     animation-name: fadeIn;
 }
 .content-controls-p{
-  height: 150px;
-  margin: 10px;
-  text-align: center;
+  height: 100px;
   margin-bottom: 35px;
+  text-align: center;
+  @media(min-width: 850px){
+    height: 150px;
+  }
 }
 .image-control{
   display: inline-block;
-  width: 28%;
+  width: 25%;
   margin: 10px;
   height: inherit;
   vertical-align: top;
-  cursor: pointer;
-
+ 
+  @media(min-width: 850px){
+    cursor: pointer;
+  }
+}
   img{
     width: 100%;
     height: 100%;

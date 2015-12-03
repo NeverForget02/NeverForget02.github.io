@@ -1,24 +1,37 @@
 .search-container {
-  display: inline-block;
+  display: block;
   overflow: hidden;
-  position:absolute;
   height: 40px;
-  width: 40px;
-  border-radius: 100%;
+  width: 250px;
   box-shadow: 0 0 5px #141414;
   -moz-transition: all 0.35s;
   -webkit-transition: all 0.35s;
-  top: 8px;
-  margin-left: 20px;
-}
-.search-container:hover {
-  width: 250px;
+  margin:0 auto;
+  margin-top: 15px;
+  position:relative;
   border-radius: 5px 20px 20px 5px;
+
+
+  @media(min-width: 1000px){
+    display: inline-block;
+    margin:0;
+    margin-left: 20px;
+    top: 8px;
+    width: 40px;
+    border-radius: 100%;
+
+  }
 }
-.search-container:hover input {
-  display: inline-block;
-  width: 200px;
-  padding: 5px;
+@media(min-width: 1000px){
+  .search-container:hover {
+    width: 250px;
+    border-radius: 5px 20px 20px 5px;
+  }
+  .search-container:hover input {
+    display: inline-block;
+    width: 200px;
+    padding:5px;
+  }
 }
 
 input {
@@ -26,20 +39,24 @@ input {
   -webkit-appearance: none;
   appearance: none;
   float: right;
-  width: 0px;
+  width: 200px;
   position: absolute;
   top:6px;
   left: 10px;
   background: #fff;
   color: #6A5D4F;
   font-size: 15px;
-  padding: 0px;
+  padding: 5px;
   border: 0;
   border-radius: 5px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -moz-transition: all 0.25s;
   -webkit-transition: all 0.25s;
+  @media(min-width: 1000px){
+    width: 0px;
+    padding:0px;
+  }
 }
 input:focus {
   outline: none;
