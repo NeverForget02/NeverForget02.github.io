@@ -35,7 +35,7 @@
 }
 .content-review-user{
 		display: block;
-	
+
 	@media(min-width: 560px){
 		float: left;
 		width: 25%;
@@ -58,12 +58,13 @@
 	@include font-size(20);
 	color: $red;
 	@media(min-width: 560px){
-		@include font-size(10);
+		@include font-size(14);
+		text-align: center;
 	}
 }
 
 .content-review-comment{
-	
+
 	@media(min-width: 560px){
 		float: right;
 		width: 70%;

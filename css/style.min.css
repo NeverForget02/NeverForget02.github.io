@@ -308,10 +308,11 @@ h4 {
 /* #Navigation
    ========================================================================== */
 .main-nav {
-  padding: 20px 0;
+  padding: 27px 0;
   border-top: 1px solid #cecece;
   border-bottom: 1px solid #cecece;
-  position: relative; }
+  position: relative;
+  margin: 0; }
   .main-nav a {
     font-size: 14px;
     font-size: 1.4rem;
@@ -356,14 +357,14 @@ h4 {
   -webkit-transition: all 0.35s;
   margin: 0 auto;
   margin-top: 15px;
-  position: relative;
+  position: absolute;
   border-radius: 5px 20px 20px 5px; }
   @media (min-width: 1000px) {
     .search-container {
       display: inline-block;
       margin: 0;
       margin-left: 20px;
-      top: 8px;
+      top: 15px;
       width: 40px;
       border-radius: 100%; } }
 
@@ -781,8 +782,7 @@ ul {
 .description {
   max-width: 1090px;
   margin-left: auto;
-  margin-right: auto;
-  padding: 17px 0; }
+  margin-right: auto; }
   .description::after {
     clear: both;
     content: "";
@@ -817,7 +817,8 @@ ul {
       display: block;
       margin-right: 2.3576515979%;
       width: 48.821174201%;
-      width: 40.821174%; }
+      width: 39%;
+      margin-right: 0; }
       .slider-preview:last-child {
         margin-right: 0; } }
 
@@ -828,9 +829,14 @@ ul {
       float: left;
       display: block;
       margin-right: 2.3576515979%;
-      width: 48.821174201%; }
+      width: 48.821174201%;
+      width: 61%; }
       .details-cost:last-child {
         margin-right: 0; } }
+
+.details-organization {
+  font-size: 18px;
+  font-size: 1.8rem; }
 
 .details-title {
   color: #DA5029; }
@@ -839,6 +845,13 @@ ul {
   font-size: 18px;
   font-size: 1.8rem;
   margin: 12px 0; }
+
+.subtitle {
+  color: #DA5029; }
+
+.review-resent {
+  background-color: #f4f4f4;
+  padding: 14px; }
 
 /* #Container stars
    ========================================================================== */
@@ -861,7 +874,7 @@ ul {
   background-color: #48AAA7;
   color: #fff;
   border: 0;
-  margin: 12px 0; }
+  margin-top: 24px; }
 
 /* #Slider
    ========================================================================== */
@@ -869,8 +882,8 @@ ul {
   display: none;
   width: 100%; }
   .slide-image img {
-    width: inherit;
-    height: 396px; }
+    width: 85%;
+    height: 368px; }
 
 .main-img {
   display: block;
@@ -883,8 +896,7 @@ ul {
 
 .content-controls-p {
   height: 100px;
-  margin-bottom: 35px;
-  text-align: center; }
+  margin-bottom: 35px; }
   @media (min-width: 850px) {
     .content-controls-p {
       height: 150px; } }
@@ -892,16 +904,17 @@ ul {
 .image-control {
   display: inline-block;
   width: 25%;
-  margin: 10px;
-  height: inherit;
+  margin: 10px 11px;
+  height: 85%;
   vertical-align: top; }
   @media (min-width: 850px) {
     .image-control {
-      width: 28%;
       cursor: pointer; } }
   .image-control img {
     width: 100%;
     height: 100%; }
+  .image-control:nth-child(1) {
+    margin-left: 0; }
 
 .active-image {
   border: 2px solid #DA5029; }
@@ -909,6 +922,22 @@ ul {
 .details {
   overflow: hidden;
   margin-top: 70px; }
+
+/* #Quanlity
+   ========================================================================== */
+.quantity p {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #DA5029;
+  margin-bottom: 8px; }
+
+.number-quanlity {
+  width: 150px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #48AAA7;
+  height: 34px;
+  background-color: #fff; }
 
 /* ==|====================
    Partials/Modules/review
@@ -970,8 +999,9 @@ ul {
   color: #DA5029; }
   @media (min-width: 560px) {
     .review-name {
-      font-size: 10px;
-      font-size: 1rem; } }
+      font-size: 14px;
+      font-size: 1.4rem;
+      text-align: center; } }
 
 @media (min-width: 560px) {
   .content-review-comment {
