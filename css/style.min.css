@@ -851,7 +851,7 @@ ul {
 
 .review-resent {
   display: none; }
-  @media (min-width: 10200px) {
+  @media (min-width: 1200px) {
     .review-resent {
       display: block;
       background-color: #f4f4f4;
@@ -1024,6 +1024,31 @@ ul {
 .content-review-comment h3 {
   margin: 0;
   color: #48AAA7; }
+
+/* ==|====================
+   Partials/Modules/sign-in
+
+   -------INDEX--------
+   #Container of sign in
+   #Form
+   ======================= */
+/* #Container of sign in
+   ========================================================================== */
+/* #Form
+   ========================================================================== */
+.form-email, .form-password {
+  width: 49%;
+  padding: 6px;
+  position: relative;
+  float: none;
+  display: block;
+  margin-top: 11px;
+  margin-bottom: 15px; }
+
+.sign-in-form {
+  border: 1px solid;
+  width: 50%;
+  margin: 0 auto; }
 
 /* ==|====================
    Partials/Componentes/Footer

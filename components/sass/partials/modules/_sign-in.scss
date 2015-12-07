@@ -1,0 +1,29 @@
+/* ==|====================
+   Partials/Modules/sign-in
+
+   -------INDEX--------
+   #Container of sign in
+   #Form
+   ======================= */
+
+/* #Container of sign in
+   ========================================================================== */
+.container-sign-in{
+
+}
+/* #Form
+   ========================================================================== */
+.form-email, .form-password{
+  width: 49%;
+  padding: 6px;
+  position: relative;
+  float: none;
+  display: block;
+  margin-top: 11px;
+  margin-bottom: 15px;
+}
+.sign-in-form{
+  border: 1px solid;
+  width: 50%;
+  margin: 0 auto;
+}
