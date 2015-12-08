@@ -136,5 +136,19 @@ $(document).ready(function(){
           }
         }
       });
+   function gallerySwipe() {
+    var contentSwipe = $('#slider');
 
+    contentSwipe.swipe({
+      swipeLeft: function() {
+        nextImage();
+      },
+      swipeRight: function() {
+        prevImage();
+      },
+      threshold: 0,
+      triggerOnTouchEnd: false
+    });
+  }
+  gallerySwipe();
 })
