@@ -556,7 +556,7 @@ ul {
 .categories {
   margin-top: 70px;
   text-align: center; }
-  @media (min-width: 560px) {
+  @media (min-width: 1000px) {
     .categories {
       text-align: left; } }
 
@@ -577,7 +577,7 @@ ul {
       width: 40%;
       margin-right: 31px;
       text-align: left; }
-      .content-category:nth-child(2n+1) {
+      .content-category:nth-child(2n+2) {
         margin-right: 0; } }
   @media (min-width: 1000px) {
     .content-category {
@@ -587,11 +587,9 @@ ul {
     .content-category {
       width: 21%;
       margin-right: 55px; }
-      .content-category:nth-child(3n+1) {
-        margin-right: 0; }
-      .content-category:nth-child(2n+1) {
+      .content-category:nth-child(2n+2) {
         margin-right: 55px; }
-      .content-category:nth-child(4n+1) {
+      .content-category:nth-child(4n+4) {
         margin-right: 0; } }
 
 /* #Title
@@ -748,9 +746,9 @@ ul {
   @media (min-width: 1200px) {
     .content-product {
       width: 30%;
-      margin-right: 42px; }
+      margin-right: 67px; }
       .content-product:nth-child(2n+2) {
-        margin-right: 42px; }
+        margin-right: 67px; }
       .content-product:nth-child(3n+3) {
         margin-right: 0; } }
   @media (min-width: 1025px) {
@@ -1044,13 +1042,25 @@ ul {
   position: relative;
   float: none;
   display: block;
-  margin-top: 11px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  left: 144px; }
 
 .sign-in-form {
   border: 1px solid;
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 23px 0; }
+  .sign-in-form button {
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: "Raleway", sans-serif;
+    padding: 12px 30px;
+    background-color: #48AAA7;
+    color: #fff;
+    border: 0;
+    margin: 24px 0; }
+  .sign-in-form a {
+    color: #DA5029; }
 
 /* ==|====================
    Partials/Componentes/Footer

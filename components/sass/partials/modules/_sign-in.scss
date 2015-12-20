@@ -19,11 +19,28 @@
   position: relative;
   float: none;
   display: block;
-  margin-top: 11px;
   margin-bottom: 15px;
+  left: 144px;
 }
+
 .sign-in-form{
   border: 1px solid;
   width: 50%;
   margin: 0 auto;
+  padding: 23px 0;
+
+  button{
+    @include font-size(14);
+    font-family: $title;
+    padding: 12px 30px;
+    background-color: $turquoise;
+    color: $white;
+    border:0;
+    margin:24px 0;
+  }
+
+  a{
+    color: $red;
+  }
 }
+
