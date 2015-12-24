@@ -1,0 +1,67 @@
+/* ==|====================
+   Partials/Modules/contact
+
+   -------INDEX--------
+   #Container of contact
+   #Form
+   #List contact
+   ======================= */
+
+/* #Container of contact
+   ========================================================================== */
+.contact{
+	margin: 70px 0;
+	overflow: hidden;
+}
+
+/* #Form
+   ========================================================================== */
+.container-form{
+	width: 50%;
+	margin: 40px auto;
+
+	textarea,
+	input{
+		width: 100%;
+	}
+	
+	textarea{
+		padding: 35px 0;
+	}
+
+	input{
+		border-radius: 0;
+		padding: 8px;
+	  position: relative;
+	  float: none;
+	  display: block;
+	  margin-bottom: 15px;
+	  left: 0;
+	}
+}
+
+/* #List contact
+   ========================================================================== */
+.container-info{
+	border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+	margin-top:90px;
+	padding: 28px;
+	width: 100%; 
+}
+
+.container-info-list{
+	display: inline-block;
+	vertical-align: top;
+	width: 24%;
+
+	p{
+		text-align: center;
+	}
+}
+
+.subtitle-contact{
+	@include font-size(16);
+	color: $red;
+	margin-bottom: 10px;
+}

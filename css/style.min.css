@@ -1036,7 +1036,8 @@ ul {
    ========================================================================== */
 /* #Form
    ========================================================================== */
-.form-email, .form-password {
+.form-email,
+.form-password {
   width: 49%;
   padding: 6px;
   position: relative;
@@ -1061,6 +1062,61 @@ ul {
     margin: 24px 0; }
   .sign-in-form a {
     color: #DA5029; }
+
+/* ==|====================
+   Partials/Modules/contact
+
+   -------INDEX--------
+   #Container of contact
+   #Form
+   #List contact
+   ======================= */
+/* #Container of contact
+   ========================================================================== */
+.contact {
+  margin: 70px 0;
+  overflow: hidden; }
+
+/* #Form
+   ========================================================================== */
+.container-form {
+  width: 50%;
+  margin: 40px auto; }
+  .container-form textarea,
+  .container-form input {
+    width: 100%; }
+  .container-form textarea {
+    padding: 35px 0; }
+  .container-form input {
+    border-radius: 0;
+    padding: 8px;
+    position: relative;
+    float: none;
+    display: block;
+    margin-bottom: 15px;
+    left: 0; }
+
+/* #List contact
+   ========================================================================== */
+.container-info {
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  margin-top: 90px;
+  padding: 28px;
+  width: 100%; }
+
+.container-info-list {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%; }
+  .container-info-list p {
+    text-align: center; }
+
+.subtitle-contact {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: #DA5029;
+  margin-bottom: 10px; }
 
 /* ==|====================
    Partials/Componentes/Footer
