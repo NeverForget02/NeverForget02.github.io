@@ -13,18 +13,30 @@
   <body>
     <header class="header">
       <div class="max-width-content">
-        <div class="content-logo">
-          <a href="index.html"><img class="content-logo-img" src="img/log1.png"></a>
-        </div><!-- content-logo -->
-        <div class="container-sign-in">
-          <form class="sign-in-form">
-            <input class="form-email" type="email" placeholder="Correo">
-            <input class="form-password" type="password" placeholder="Contraseña">
-            <button>Ingresar</button>
-            <p>Te puedes <a href="#">registrar aqui</a></p>
-          </form>
-        </div><!-- container-sign-in -->
+        <img class="content-logo-img" src="img/log1.png">
+        <nav class="main-nav">
+          <a href="index.html">Inicio</a>
+          <a href="/#category">Categorias</a>
+          <a href="buy.html">Como comprar?</a>
+          <a href="contact.html">Contacto</a>
+          <a href="sign-in.html">Iniciar Sesión</a>
+          <div class='search-container'>
+            <input placeholder='Search' type='text'>
+            <a class='button' href="index.html">
+              <img class="search" src="img/search-icon.png">
+            </a>
+          </div><!-- search-container -->
+        </nav><!-- main-nav -->
       </div><!-- max-width-content -->
     </header><!-- header -->
+    <div class="container-sign-in">
+      <form class="sign-in-form">
+        <h3 class="title-sign">Iniciar Sesion</h3>
+        <input class="form-email" type="email" placeholder="Correo">
+        <input class="form-password" type="password" placeholder="Contraseña">
+        <button>Ingresar</button>
+        <p>Te puedes <a href="#">registrar aqui</a></p>
+      </form>
+    </div><!-- container-sign-in -->
   </body>
 </html>

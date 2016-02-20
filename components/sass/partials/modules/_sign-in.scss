@@ -10,6 +10,10 @@
    ========================================================================== */
 /* #Form
    ========================================================================== */
+.title-sign{
+  color: $red;
+}
+
 .form-email, 
 .form-password{
   width: 49%;
@@ -18,14 +22,14 @@
   float: none;
   display: block;
   margin-bottom: 15px;
-  left: 144px;
+  margin-left: 166px;
 }
 
 .sign-in-form{
-  border: 1px solid;
   width: 50%;
   margin: 0 auto;
   padding: 23px 0;
+  text-align: center;
 
   button{
     @include font-size(14);

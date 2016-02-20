@@ -61,7 +61,14 @@
 	}
 
 	@media (min-width: 1025px){
-		margin-right: 42px;
+		margin-right: 54px;
+
+		&:nth-child(2n+2){
+			margin-right: 54px;
+		}
+		&:nth-child(3n+3){
+			margin-right: 0;
+		}
 	}
 }
 .btn-product{
