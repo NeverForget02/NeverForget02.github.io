@@ -16,13 +16,11 @@
 
 .form-email, 
 .form-password{
+  @include font-size(14);
+  display: block;
   width: 49%;
   padding: 6px;
-  position: relative;
-  float: none;
-  display: block;
-  margin-bottom: 15px;
-  margin-left: 166px;
+  margin: 13px auto;
 }
 
 .sign-in-form{

@@ -1,84 +1,151 @@
-.search-container {
-  display: block;
-  overflow: hidden;
-  height: 40px;
-  width: 250px;
-  box-shadow: 0 0 5px #141414;
-  -moz-transition: all 0.35s;
-  -webkit-transition: all 0.35s;
-  margin:0 auto;
-  margin-top: 15px;
-  position:absolute;
-  border-radius: 5px 20px 20px 5px;
 
-
-  @media(min-width: 1000px){
-    display: inline-block;
-    margin:0;
-    margin-left: 20px;
-    top: 15px;
-    width: 40px;
-    border-radius: 100%;
-
-  }
+// Font Awesome Snippets
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-@media(min-width: 1000px){
-  .search-container:hover {
-    width: 250px;
-    border-radius: 5px 20px 20px 5px;
-  }
-  .search-container:hover input {
-    display: inline-block;
-    width: 200px;
-    padding:5px;
-  }
+.fa-search:before {
+  content: "\f002";
 }
 
-input {
-  -moz-appearance: none;
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+.nav-search-container{
+  position: relative;
+}
+.nav-search-container input:-moz-placeholder {
+  color: transparent;
+}
+
+.nav-search-container input::-webkit-input-placeholder {
+  color: transparent;
+}
+.nav-search-container {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+// Search Box styling
+input[type="search"] {
+  box-sizing: border-box;
+  border-radius:0;
   -webkit-appearance: none;
-  appearance: none;
-  float: right;
-  width: 200px;
-  position: absolute;
-  top:6px;
-  left: 10px;
-  background: #fff;
-  color: #6A5D4F;
-  font-size: 15px;
-  padding: 5px;
-  border: 0;
-  border-radius: 5px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2) inset;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  -moz-transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  @media(min-width: 1000px){
-    width: 0px;
-    padding:0px;
-  }
-}
-input:focus {
-  outline: none;
-  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 
-.button {
-  float: right;
-  width: 30px;
-  height: 30px;
-  margin-right: 5px !important;
-  margin: 5px;
-  background:  #ccc;
-  border-radius: 50%;
+input:-moz-placeholder {
+  color: #999;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.glyphicon-search {
+  color: $black;
+}
+
+.nav-search-container {
+  @extend .fa;
+  @extend .fa-search;
+  position: relative;
+  color: #000;
+  margin-left: 20px;
+  text-align: left;
+
+  &:before {
+    position: absolute;
+    top: .8em;
+    left: 1.2em;
+    font-size: 15px;
+  }
+}
+
+.search-input {
+  color: #000;
+  outline: none;
+  width: 0px;
+  color: transparent;
   cursor: pointer;
-  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.25), 0 1px 1px rgba(0, 0, 0, 0.25);
-  text-shadow: 0 -2px 1px rgba(0, 0, 0, 0.3);
+  border: none;
+  min-height: 43px;
+  font-size: 1.5em;
+  -webkit-appearance: textfield;
+  box-sizing: border-box;
+  background-color: inherit;
+  padding: 8px 25px;
+  transition: all .2s, width .1s ease-in-out;
+  color: #000;
+  &:hover {
+    background-color: rgba($black, 0.1);
+  }
+  .focused & {
+    width: 250px;
+    background-color: rgba($black, 0.1);
+    border-color: #000;
+    font-size: 15px;
+    box-shadow: none;
+    padding-right: 85px;
+    padding-left: 40px;
+    cursor: auto;
+  }
 }
-.button img {
-  margin-top: 6px;
+// Submit
+.submit-container {
+  @extend .fa;
+  @extend .fa-arrow-right;
+  display: inline-block;
+  height: 43px;
+  width: 36px;
+  position: absolute;
+  visibility: hidden;
+  transition: visibility 1ms;
+  // Cancel Out default stylings
+  box-shadow: none;
+  box-sizing: border-box;
+  
+  &:before {
+    position: absolute;
+    top: 25%;
+    color: $white;
+    left: 30%;
+    display: block;
+    font-size: 2.2rem;
+  }
+  // Toggle When text entered
+  .show-submit.focused & {
+    visibility: inherit;
+  }
+  .submit {
+    height: 100%;
+    width: 0;
+    border-radius:0;
+    // Reset defualt stylings
+    text-indent: -999px;
+    background: $red;
+    padding: 0;
+    border: none;
+    transition: width 200ms;
+    // Show when text entered
+    .show-submit & {
+      width: 100%;
+      visibility: inherit;
+    }
+  }
 }
-.button:active {
-  border: 0 !important;
-  text-shadow: 0 0 0;
-}
+

@@ -22,21 +22,21 @@
 
 	textarea,
 	input{
+		@include font-size(14);
 		width: 100%;
 	}
 	
 	textarea{
-		padding: 35px 0;
+		height: 130px;
+		padding: 10px;
 	}
 
 	input{
 		border-radius: 0;
 		padding: 8px;
 	  position: relative;
-	  float: none;
 	  display: block;
 	  margin-bottom: 15px;
-	  left: 0;
 	}
 }
 

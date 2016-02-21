@@ -182,7 +182,7 @@ function generateContent(products, category){
     var contentCategory="";
     for(var i=0;i<category.length;i++){
       if(category.unique()[i] != undefined){
-        contentCategory += '<div class="content-category" id="'+category.unique()[i].toLowerCase()+'"><a href="products.html"><img src="img/'+category.unique()[i].toLowerCase()+'/'+category.unique()[i]+'.jpg"><div class="content-category-text"><i class="triangle"></i><p>'+category.unique()[i]+'</p></div></a></div>';
+        contentCategory += '<div class="content-category" id="'+category.unique()[i].toLowerCase()+'"><a href="adornos.html"><img src="img/'+category.unique()[i].toLowerCase()+'/'+category.unique()[i]+'.jpg"><div class="content-category-text"><i class="triangle"></i><p>'+category.unique()[i]+'</p></div></a></div>';
       }
     }
     $('#category').append(contentCategory);
@@ -221,3 +221,40 @@ function generateContent(products, category){
   printCategory();
   printeRecentsProducts();
 }
+
+// Search 
+$( document ).ready(function() {
+
+// Artificial custom focus action for Search Bar
+var searchInput = $(".nav-search-container .search-input"),
+    selectInput = $("#type");
+
+// Focus if we click
+searchInput.focus(function(){
+    $(this).parent().addClass('focused');
+});
+
+searchInput.blur(function(){
+   window.setTimeout(blurTester, 100);
+});
+selectInput.blur(function(){
+    window.setTimeout(blurTester, 100);
+});
+
+function blurTester() {
+  if ($(searchInput).is(":focus") ||  $(selectInput).is(":focus") ){
+  }
+  else if ($(searchInput).val()) {
+
+  }
+  else {
+    $('.nav-search-container').removeClass('focused');
+  }
+}
+  // Show submit on input type
+  searchInput.keypress(function(){
+    if($(this).val() < 1){
+      $(this).parent().addClass('show-submit');
+    }
+  }); 
+});
