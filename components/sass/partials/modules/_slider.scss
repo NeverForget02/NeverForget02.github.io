@@ -7,12 +7,13 @@ ul{
     height: 400px;
     overflow: hidden;
     position: relative;
-    margin-top: 70px;
+    margin-top: 80px;
     @media( min-width: 560px){
-        height: 300px;
+      height: 300px;
     }
     @media( min-width: 1000px){
-        height: 600px;
+      height: 600px;
+      margin-top: 160px;
     }
 }
 .slides{

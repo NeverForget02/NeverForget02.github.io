@@ -9,7 +9,7 @@
 /* #Container of navigation
    ========================================================================== */
 
-
+ 
 /* #Navigation
    ========================================================================== */
 .main-nav{
@@ -18,11 +18,104 @@
    border-bottom: 1px solid #cecece;
    position: relative;
    margin: 0;
+}
 
-	a{
-		@include font-size(14);
-		margin-left: 20px;
-		color: $grey;
-      text-transform: uppercase;
-	}
+.header-navegation-links-a{
+   @include font-size(26);
+   font-family: $title;
+   color: $grey;
+   text-transform: uppercase;
+
+   @media (min-width: $medium) {
+      @include font-size(14);
+      margin-left: 20px;
+   }
+}
+
+#menu {
+  display: none;
+
+  @media (min-width: $medium) {
+   display: block;
+  }
+}
+
+/*Change toggle size by adjusting width & height*/
+.tb-menu-toggle {
+  border: 0;
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+  margin-top: 25px;
+
+  @media (min-width: $medium){
+      display: none;
+  }
+}
+
+/*Change toggle color here*/
+.tb-menu-toggle i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  -webkit-transition:all .2s;
+   -moz-transition:all .2s;
+     -o-transition:all .2s;
+        transition:all .2s;
+}
+.tb-menu-toggle i:nth-child(2) {
+  top: 40%;
+}
+.tb-menu-toggle i:nth-child(3) {
+  top: 80%;
+}
+
+/*Animation of the toggle*/
+.tb-menu-toggle.tb-animate-toggle i:first-child,
+.tb-menu-toggle.tb-animate-toggle i:nth-child(2){ 
+  top: 40%;
+  -webkit-transform:rotate(45deg);
+   -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+     -o-transform:rotate(45deg);
+        transform:rotate(45deg);
+} 
+.tb-menu-toggle.tb-animate-toggle i:nth-child(3){ 
+  top: 40%;
+  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -o-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+
+.main-mobile{
+   padding-top: 40px;
+
+   @media (min-width: $medium) {
+      padding: 0;
+      height: 0;
+   }
+
+   li{
+      text-align: center;
+      list-style: none;
+      padding: 11px 0;
+
+      &:last-child{
+         margin-right: 0;
+      }
+      @media (min-width: $medium) {
+         display: inline-block;
+         margin-right: 29px;
+      }
+   }
+
+   @media (min-width: $medium) {
+      background: none;
+   }
 }
